@@ -141,22 +141,27 @@ public class WordApp {
 							caught.setText("Caught: " + score.getCaught() + "    ");
 							missed.setText("Missed:" + score.getMissed()+ "    ");
 							scr.setText("Score:" + score.getScore()+ "    ");
-							if (!(totalWords >=score.getTotal())){ //check if words captured or missed < no of words
+							if (!(totalWords >score.getTotal())){ //check if words captured or missed < no of words
 									w.completed();  //end game
-									score.resetScore(); //reset scores
+
 									// create a dialog Box
-									JDialog d = new JDialog(frame, "dialog Box");
+									JDialog d = new JDialog(frame, "Game Over!");
 
 									// create a label
-									JLabel l = new JLabel("this is a dialog box");
+									JLabel l = new JLabel("You caught "+score.getCaught()+" out of "+score.getTotal()+"words. Your Score was "+ score.getScore());
 
 									d.add(l);
 
 									// setsize of dialog
-									d.setSize(100, 100);
+									d.setSize(400, 200);
+
+			            // set location of dialog
+			            d.setLocation(200, 200);
 
 									// set visibility of dialog
 									d.setVisible(true);
+
+									score.resetScore(); //reset scores
 							}
 						}
 				}
