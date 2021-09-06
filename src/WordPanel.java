@@ -108,7 +108,7 @@ public class WordPanel extends JPanel implements Runnable {
 			for (int j = 0; j < noWords; j++){
 				if(words[j].matchWord(a)){
 					found = true;
-					break;
+					return found;
 				}
 			}
 			return found;

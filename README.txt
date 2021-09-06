@@ -20,7 +20,7 @@ $ make run total_words=<total_words> words_on_screen=<words_on_screen> dict_file
 ## Documentation
 ### generate Javadocs
 ```
-$ make docs
+$ make doc
 ```
 ### clean Javadocs
 ```
