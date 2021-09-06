@@ -1,7 +1,7 @@
 # CSC2002S - Assignment 2
 # Concurrent Programming a word game
 ## Goal
-### Use concurrency to safe parallelism in wordApp with no deadlocks
+### Use concurrency to implement safe parallelism in wordApp with no deadlocks
 
 ## Part 1: Program
 ### Build
