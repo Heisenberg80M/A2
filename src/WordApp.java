@@ -148,7 +148,7 @@ public class WordApp {
 									JDialog d = new JDialog(frame, "Game Over!");
 
 									// create a label
-									JLabel l = new JLabel("You caught "+score.getCaught()+" out of "+score.getTotal()+"words. Your Score was "+ score.getScore());
+									JLabel l = new JLabel("You caught "+score.getCaught()+" out of "+score.getTotal()+" words. Your Score was "+ score.getScore());
 
 									d.add(l);
 
